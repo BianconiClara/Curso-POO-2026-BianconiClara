@@ -70,20 +70,7 @@ Diseñar una aplicación que combine:
 ## 🧱 Estructura del Proyecto
 
 El sistema está organizado en clases para separar responsabilidades:
-
-* `MonitorManager`
-
-  * Lógica de monitoreo.
-  * Requests al endpoint.
-  * Procesamiento de datos.
-* `DashboardWidget`
-
-  * Interfaz gráfica principal.
-* Clases auxiliares
-
-  * Modelos de datos / historial.
-
-> ⚠️ Restricción: No concentrar la lógica en `main.cpp`.
+![Estructura](arquitectura.png)
 
 ---
 
@@ -126,4 +113,4 @@ Ejemplo:
 
 ---
 ## 📷 Capturas Solicitadas
-
+![Pantalla](pantalla.png)
