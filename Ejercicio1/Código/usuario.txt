@@ -1,0 +1,2 @@
+usuario:clara;
+timestamp:1711380000;
