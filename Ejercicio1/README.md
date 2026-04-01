@@ -53,7 +53,7 @@ Desarrollar una aplicación funcional que implemente conceptos fundamentales de 
 ---
 
 ## 🧱 Estructura del Proyecto
-
+![Estructura](Img/arquitectura.png)
 
 ---
 
@@ -78,5 +78,19 @@ Desarrollar una aplicación funcional que implemente conceptos fundamentales de 
 * La persistencia de sesión es simulada (5 minutos).
 * El sistema no utiliza bases de datos externas.
 * Ideal para practicar arquitectura básica en aplicaciones Qt.
+ ---
+ 
+## 📷 Capturas Solicitadas
+### Inicio Sesión
+![Inicio Sesion](Img/inicio_sesion.png)
+
+### Pantalla Principal
+![Pantalla Principal](Img/pantalla_principial.png)
+
+### Filtro por Estado
+![Filtro por Estado](Img/pantalla_filtro_estado.png)
+
+### Filtro por Prioridad
+![Filtro por Prioridad](Img/pantalla_filtro_prioridad.png)
 
 
