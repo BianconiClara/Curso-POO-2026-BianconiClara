@@ -32,8 +32,8 @@ El color cambia en función de la tecla presionada (1 → 9).
 
 ---
 
-## 🧠 Arquitectura del sistema
-
+## 🧠 Estructura del sistema
+![Estructura](estructura.png)
 
 ---
 
