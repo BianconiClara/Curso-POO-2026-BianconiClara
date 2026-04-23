@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="images/offline-background.jpg">../assets/images/offline-background.jpg</file>
+        <file alias="profile/professional-profile.jpeg">../assets/profile/professional-profile.jpeg</file>
+    </qresource>
+</RCC>
