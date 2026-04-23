@@ -39,3 +39,13 @@ El proyecto sigue una arquitectura cliente-servidor:
 
 ### Persistencia:
 - Al reiniciar, el tablero queda igual.
+### Imágenes 🖼️
+
+#### Pantalla Login
+![Pantalla login](Imagenes/login.png)
+
+#### Pantalla Tablero
+
+Se puede observar que este no carga debido a una demora u error en el funcionamiento del servidor Contabo.
+
+![Pantalla tablero](Imagenes/tablero.png)
