@@ -1,0 +1,3 @@
+
+API usada finalmente en esta resolucion Qt:
+https://www.weatherapi.com/docs/
