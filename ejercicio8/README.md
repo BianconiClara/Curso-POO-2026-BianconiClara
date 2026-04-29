@@ -1,21 +1,21 @@
-# Ejercicio 08 - Editor multilenguaje en Qt
+# Ejercicio 08 - Editor multilenguaje en Qt 💻
 
-Resolucion completa de la consigna en `ejercicio8/codigo`, siguiendo el enfoque visto en clase con:
+Resolución completa de la consigna en `ejercicio8/codigo`, siguiendo el enfoque visto en clase con:
 
 - `Pantalla` abstracta y uso real de polimorfismo.
-- signals/slots para coordinar la interfaz.
-- validadores de sintaxis por jerarquia (`ValidadorSintaxis`, `ValidadorCpp`, `ValidadorPython`, `ValidadorJava`).
-- configuracion leida desde archivo `INI`.
-- registro de eventos en archivo de log.
-- funcionamiento offline, sin servicios remotos.
+- Signals/slots para coordinar la interfaz.
+- Validadores de sintaxis por jerarquía (`ValidadorSintaxis`, `ValidadorCpp`, `ValidadorPython`, `ValidadorJava`).
+- Configuración leída desde archivo `INI`.
+- Registro de eventos en archivo de log.
+- Funcionamiento offline, sin servicios remotos.
 
-## Ubicacion del ejercicio
+## Ubicación del ejercicio 📌
 
-Todo el codigo fuente del ejercicio esta en:
+Todo el código fuente del ejercicio está en:
 
 - `codigo/`
 
-## Credenciales iniciales
+## Credenciales iniciales 💁
 
 Se leen desde `codigo/config/app.ini`.
 
@@ -24,27 +24,27 @@ Valores por defecto:
 - Usuario: `admin`
 - Clave: `1234`
 
-## Requisitos de la consigna cubiertos
+## Requisitos de la consigna cubiertos ✔️
 
 1. Login inicial con bloqueo temporal luego de 3 intentos fallidos.
-2. Clase base abstracta `Pantalla` con metodos virtuales puros:
+2. Clase base abstracta `Pantalla` con métodos virtuales puros:
    `inicializarUI()`, `conectarEventos()`, `cargarDatos()`, `validarEstado()` y `registrarEvento()`.
 3. Pantallas derivadas concretas:
    `LoginScreen`, `EditorPrincipal` y `ModoBloqueado`.
 4. Flujo controlado por `AppController` usando punteros a la clase base `Pantalla`.
 5. Selector de lenguaje con soporte para `C++`, `Python` y `Java`.
-6. Validacion de sintaxis por linea al abandonar la linea editada.
-7. Resaltado de errores en rojo y mensaje diagnostico amigable en UI.
-8. Redefinicion de eventos:
+6. Validación de sintaxis por línea al abandonar la línea editada.
+7. Resaltado de errores en rojo y mensaje diagnóstico amigable en UI.
+8. Redefinición de eventos:
    `keyPressEvent`, `mousePressEvent`, `resizeEvent`, `closeEvent`, `focusInEvent` y `focusOutEvent`.
 9. Registro de eventos relevantes en `codigo/logs/editor_multilenguaje.log`.
-10. Lectura de configuracion desde `codigo/config/app.ini`.
+10. Lectura de configuración desde `codigo/config/app.ini`.
 11. Funcionamiento offline.
-12. Apertura de la ventana principal en full screen despues del login valido.
-13. Exportacion a un unico archivo JPG legible con todo el codigo y sus saltos de linea.
-14. Panel lateral estilo LinkedIn con foto, descripcion, habilidades y contacto.
+12. Apertura de la ventana principal en full screen después del login válido.
+13. Exportación a un único archivo JPG legible con todo el código y sus saltos de línea.
+14. Panel lateral estilo LinkedIn con foto, descripción, habilidades y contacto.
 
-## Estructura principal
+## Estructura principal 🏠
 
 ```text
 codigo/
@@ -64,9 +64,9 @@ codigo/
     `-- validadorsintaxis.*
 ```
 
-## Como compilar
+## Cómo compilar ⏯️
 
-El proyecto esta preparado con `qmake` (`.pro`) y Qt Widgets.
+El proyecto está preparado con `qmake` (`.pro`) y Qt Widgets.
 
 Ejemplo general:
 
@@ -76,48 +76,33 @@ qmake editor_multilenguaje.pro
 make
 ```
 
-En Windows con MinGW suele ser:
+También se puede abrir directamente `codigo/editor_multilenguaje.pro` desde Qt Creator.
 
-```bash
-cd codigo
-qmake editor_multilenguaje.pro
-mingw32-make
-```
 
-Tambien se puede abrir directamente `codigo/editor_multilenguaje.pro` desde Qt Creator.
+## Comportamiento del editor 🖋️
 
-## Configuracion
-
-Archivo:
-
-- `codigo/config/app.ini`
-
-Claves principales:
-
-- `login/usuario_inicial`
-- `login/clave_inicial`
-- `login/tiempo_bloqueo_segundos`
-- `editor/lenguaje_por_defecto`
-- `editor/ruta_exportacion`
-
-## Atajos implementados
-
-- `Enter`: enviar login.
-- `Escape`: limpiar clave en login.
-- `Ctrl + S`: exportar el codigo a JPG.
-- `Ctrl + Enter`: validar manualmente la linea actual.
-- `Ctrl + L`: enfocar el selector de lenguaje.
-- `Ctrl + R`: recargar la plantilla base del lenguaje activo.
-
-## Comportamiento del editor
-
-- La validacion corre cuando se abandona la linea actual.
+- La validación corre cuando se abandona la línea actual.
 - Cada error queda resaltado en rojo.
-- El diagnostico aparece debajo del editor.
-- La exportacion genera un solo JPG dentro de la carpeta configurada.
+- El diagnóstico aparece debajo del editor.
+- La exportación genera un solo JPG dentro de la carpeta configurada.
 
-## Observaciones
+## Imagenes 🖼️
 
-- La aplicacion no depende de internet.
-- Los logs se guardan en `codigo/logs/`.
-- La carpeta de exportacion por defecto es `codigo/exports/`.
+### Login
+![Login](img/login.png)
+
+ 
+### Login Cuando se Ingresa Clave Incorrecta
+![Login](img/login-error.png)
+
+
+### Pantalla de Bloqueo
+![bloqueo](img/bloqueo.png)
+
+
+### Pantalla Principal
+![principal](img/principal.png)
+
+
+### Pantalla Principal Cuando Validador Encuentra Error
+![validador](img/validacion.png)
