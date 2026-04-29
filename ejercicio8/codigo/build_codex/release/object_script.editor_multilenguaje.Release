@@ -1,0 +1,15 @@
+release/main.o
+release/appcontroller.o
+release/appconfig.o
+release/editorprincipal.o
+release/loginscreen.o
+release/logger.o
+release/modobloqueado.o
+release/pantalla.o
+release/validadorsintaxis.o
+release/qrc_resources.o
+release/moc_appcontroller.o
+release/moc_editorprincipal.o
+release/moc_loginscreen.o
+release/moc_modobloqueado.o
+release/moc_pantalla.o
