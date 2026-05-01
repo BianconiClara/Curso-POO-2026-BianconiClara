@@ -29,8 +29,8 @@
 ## Imágenes y videos del Proyecto
 ### LOGIN
 [video del Login](recursos/login.mp4)
-[imagn](reursos/img-login.png)
+[imagn](recursos/img-login.png)
 
 ### PANTALLA PARA DIBUJAR
 [video del dibujo](recursos/dibujo.mp4)
-[imgen](reursos/img-dibujo.png)
+[imgen](recursos/img-dibujo.png)
