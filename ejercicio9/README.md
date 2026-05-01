@@ -1,41 +1,36 @@
-# Ejercicio 09 - Qt + SQLite
+# Ejercicio 09 - Coordenadas en base de datos 🖼️
 
-Resolucion del ejercicio `Clase14.rst`:
+# Requisitos 📌
 
 - Login hecho con Qt Designer (`login.ui`)
-- Validacion de usuarios en SQLite
-- Registro de accesos exitosos y fallidos sin guardar contrasenas en logs
+- Validación de usuarios en SQLite
+- Registro de accesos exitosos y fallidos sin guardar contraseñas en logs
 - Clase `Pintura` derivada de `QWidget`
 - Cambio de grosor con rueda del mouse
 - Cambio de color con teclas `R`, `G` y `B`
 - Borrado total con `Escape`
-- Deshacer con `Ctrl+Z` limitado a las ultimas 10 acciones
-- Persistencia de trazos y coordenadas para reconstruccion del dibujo
+- Deshacer con `Ctrl+Z` limitado a las últimas 10 acciones
+- Persistencia de trazos y coordenadas para reconstrucción del dibujo
 
-## Relacion con `ejercicio4_Bianconi`
-
-Se reutilizo la idea de la tabla `usuarios` con estos campos:
-
-- `username`
-- `password`
-- `nombre`
-- `apellido`
-- `email`
-- `activo`
-
-En esta version se usa SQLite y la clave se guarda como hash SHA-256.
-
-## Credenciales de prueba
+## Credenciales de prueba 💁
 
 - `cbianconi / 123`
 - `mlopez / poo2026`
 
-## Como abrirlo
+## Como abrirlo ⏯️
 
 1. Abrir `ejercicio09_qt.pro` en Qt Creator.
 2. Compilar y ejecutar.
 3. La base SQLite se crea sola en `data/ejercicio09.sqlite` junto al ejecutable.
 
-## Archivo SQL
+## Archivo SQLite 🗂️
+- En el archivo init.sql solo se encuentra el esquema de referencia mientras que el documento sqlite se encuentra dentro de  [sqlite](ejercicio9/codigo/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/debug/data/ejercicio09.sqlite)
 
-El esquema de referencia tambien queda en `db/init.sql`.
+## Imágenes y videos del Proyecto
+### LOGIN
+[video del Login](recursos/login.mp4)
+[imagn](reursos/img-login.png)
+
+### PANTALLA PARA DIBUJAR
+[video del dibujo](recursos/dibujo.mp4)
+[imgen](reursos/img-dibujo.png)
