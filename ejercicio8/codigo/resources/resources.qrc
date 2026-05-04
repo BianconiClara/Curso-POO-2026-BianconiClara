@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="profile/professional-profile.jpeg">../assets/profile/professional-profile.jpeg</file>
+    </qresource>
+</RCC>
