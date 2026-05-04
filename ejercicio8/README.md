@@ -88,9 +88,9 @@ También se puede abrir directamente `codigo/editor_multilenguaje.pro` desde Qt 
 Solo se validará la línea solo al presionar su respectivo botón.
   ### C++:
   Si hay un compilador C++ disponible (como g++ o clang++), intenta compilar el código completo en un archivo temporal usando flags de sintaxis (-fsyntax-only). Analiza los errores del compilador para reportar problemas más precisos. Si no encuentra un compilador o falla, vuelve a la validación heurística, es decir, a la básica. Por ejemplo: corchetes, punto y coma, el #include, etc.
-  ### Java 
+  ### Java:
   Solo hace la validación básica.
-  #### Python
+  #### Python:
   Solo hace validación básica.
    
 
