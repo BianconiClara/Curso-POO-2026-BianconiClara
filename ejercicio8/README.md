@@ -33,16 +33,15 @@ Valores por defecto:
    `LoginScreen`, `EditorPrincipal` y `ModoBloqueado`.
 4. Flujo controlado por `AppController` usando punteros a la clase base `Pantalla`.
 5. Selector de lenguaje con soporte para `C++`, `Python` y `Java`.
-6. Validación de sintaxis por línea al abandonar la línea editada.
-7. Resaltado de errores en rojo y mensaje diagnóstico amigable en UI.
-8. Redefinición de eventos:
+6. Resaltado de errores en rojo y mensaje diagnóstico amigable en UI.
+7. Redefinición de eventos:
    `keyPressEvent`, `mousePressEvent`, `resizeEvent`, `closeEvent`, `focusInEvent` y `focusOutEvent`.
-9. Registro de eventos relevantes en `codigo/logs/editor_multilenguaje.log`.
-10. Lectura de configuración desde `codigo/config/app.ini`.
-11. Funcionamiento offline.
-12. Apertura de la ventana principal en full screen después del login válido.
-13. Exportación a un único archivo JPG legible con todo el código y sus saltos de línea.
-14. Panel lateral estilo LinkedIn con foto, descripción, habilidades y contacto.
+8. Registro de eventos relevantes en `codigo/logs/editor_multilenguaje.log`.
+9. Lectura de configuración desde `codigo/config/app.ini`.
+10. Funcionamiento offline.
+11. Apertura de la ventana principal en full screen después del login válido.
+12. Exportación a un único archivo JPG legible con todo el código y sus saltos de línea.
+13. Panel lateral estilo LinkedIn con foto, descripción, habilidades y contacto.
 
 ## Estructura principal 🏠
 
@@ -85,6 +84,15 @@ También se puede abrir directamente `codigo/editor_multilenguaje.pro` desde Qt 
 - Cada error queda resaltado en rojo.
 - El diagnóstico aparece debajo del editor.
 - La exportación genera un solo JPG dentro de la carpeta configurada.
+## Validación con compilador: 
+Solo se validará la línea solo al presionar su respectivo botón.
+  ### C++:
+  Si hay un compilador C++ disponible (como g++ o clang++), intenta compilar el código completo en un archivo temporal usando flags de sintaxis (-fsyntax-only). Analiza los errores del compilador para reportar problemas más precisos. Si no encuentra un compilador o falla, vuelve a la validación heurística, es decir, a la básica. Por ejemplo: corchetes, punto y coma, el #include, etc.
+  ### Java 
+  Solo hace la validación básica.
+  #### Python
+  Solo hace validación básica.
+   
 
 ## Imagenes 🖼️
 
