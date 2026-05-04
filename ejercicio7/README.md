@@ -13,6 +13,8 @@ Proyecto de escritorio en Qt Widgets para resolver la consigna de login con clim
 - Soporte offline con datos simulados y fondo de respaldo embebido
 - Ventana principal full screen con una tarjeta profesional estilo LinkedIn
 - Registro de eventos en archivo de log
+## API
+Link: [Weather Api](https://www.weatherapi.com/docs/)
 
 ## Estructura 🏠
 
